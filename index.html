@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Binance Fruit Flies | $币安果蝇</title>
-  <meta name="description" content="Tiny wings, massive dreams! Swarm the market, chase green candles, and buzz toward the moon. Binance Fruit Flies — $币安果蝇." />
-  <meta property="og:title" content="Binance Fruit Flies | $币安果蝇" />
+  <title>Binance Fruit Flies | $幣安果蠅</title>
+  <meta name="description" content="Tiny wings, massive dreams! Swarm the market, chase green candles, and buzz toward the moon. Binance Fruit Flies — $幣安果蠅." />
+  <meta property="og:title" content="Binance Fruit Flies | $幣安果蠅" />
   <meta property="og:description" content="Tiny wings, massive dreams! Swarm the market, chase green candles, and buzz toward the moon." />
-  <meta property="og:image" content="banner.jpg" />
+  <meta property="og:image" content="logo.png" />
   <link rel="icon" href="logo.png" type="image/png" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -16,18 +16,17 @@
         extend: {
           colors: {
             bnb: "#F0B90B",
-            honey: "#FFD54A",
-            orchard: "#1A1205",
-            pulp: "#FFF6D6",
-            rind: "#8A5A00",
+            night: "#0B0E11",
+            panel: "#181A20",
+            ink: "#EAECEF",
+            mute: "#848E9C",
           },
           fontFamily: {
-            display: ["Orbitron", "Noto Sans TC", "sans-serif"],
-            body: ["Outfit", "Noto Sans TC", "sans-serif"],
+            display: ["IBM Plex Sans", "Noto Sans TC", "sans-serif"],
+            body: ["IBM Plex Sans", "Noto Sans TC", "sans-serif"],
           },
           boxShadow: {
-            glow: "0 0 40px rgba(240, 185, 11, 0.45)",
-            hive: "0 0 0 1px rgba(240, 185, 11, 0.35), 0 20px 50px rgba(0,0,0,0.45)",
+            glow: "0 0 36px rgba(240, 185, 11, 0.28)",
           },
         },
       },
@@ -35,37 +34,25 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700;900&family=Orbitron:wght@600;800;900&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@700;900&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --ca: "TBA";
-    }
-
     html { scroll-behavior: smooth; }
 
     body {
-      background-color: #120c02;
-      background-image:
-        linear-gradient(180deg, rgba(12, 8, 1, 0.62) 0%, rgba(18, 10, 2, 0.78) 40%, rgba(10, 7, 1, 0.88) 100%),
-        url("banner.jpg");
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      color: #fff6d6;
+      background:
+        radial-gradient(1200px 600px at 80% -10%, rgba(240, 185, 11, 0.12), transparent 55%),
+        radial-gradient(900px 500px at 0% 100%, rgba(240, 185, 11, 0.08), transparent 50%),
+        #0B0E11;
+      color: #EAECEF;
     }
 
-    @media (max-width: 768px) {
-      body { background-attachment: scroll; }
+    .diamond-grid {
+      background-image: url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M36 8 L64 36 L36 64 L8 36 Z' fill='none' stroke='%23F0B90B' stroke-opacity='0.06' stroke-width='1'/%3E%3C/svg%3E");
     }
 
-    .hive-grid {
-      background-image: url("data:image/svg+xml,%3Csvg width='56' height='98' viewBox='0 0 56 98' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M28 66L0 50V18L28 2l28 16v32L28 66z' fill='none' stroke='%23F0B90B' stroke-opacity='0.08' stroke-width='1'/%3E%3C/svg%3E");
-    }
-
-    .gold-border {
-      border: 1px solid rgba(240, 185, 11, 0.4);
-      background: linear-gradient(180deg, rgba(26, 18, 5, 0.82), rgba(12, 8, 2, 0.88));
-      backdrop-filter: blur(14px);
+    .card {
+      background: #181A20;
+      border: 1px solid rgba(240, 185, 11, 0.18);
     }
 
     .shine {
@@ -76,7 +63,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(110deg, transparent 30%, rgba(255, 246, 214, 0.28) 48%, transparent 62%);
+      background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.22) 48%, transparent 62%);
       transform: translateX(-120%);
       animation: shine 4.5s ease-in-out infinite;
     }
@@ -107,8 +94,8 @@
       animation: pulseGlow 2.4s ease-in-out infinite;
     }
     @keyframes pulseGlow {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(240, 185, 11, 0.55), 0 0 40px rgba(240, 185, 11, 0.35); }
-      50% { box-shadow: 0 0 0 14px rgba(240, 185, 11, 0), 0 0 70px rgba(240, 185, 11, 0.55); }
+      0%, 100% { box-shadow: 0 0 0 0 rgba(240, 185, 11, 0.45), 0 0 40px rgba(240, 185, 11, 0.28); }
+      50% { box-shadow: 0 0 0 14px rgba(240, 185, 11, 0), 0 0 70px rgba(240, 185, 11, 0.4); }
     }
 
     .ticker {
@@ -137,12 +124,6 @@
       height: 2px;
     }
 
-    .nav-blur {
-      background: rgba(12, 8, 1, 0.72);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(240, 185, 11, 0.28);
-    }
-
     .ca-mono {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
       letter-spacing: 0.08em;
@@ -150,56 +131,56 @@
   </style>
 </head>
 <body class="font-body antialiased overflow-x-hidden">
-  <div class="pointer-events-none fixed inset-0 hive-grid opacity-70"></div>
+  <div class="pointer-events-none fixed inset-0 diamond-grid"></div>
 
   <svg class="pointer-events-none fixed left-[8%] top-[22%] hidden w-16 h-16 float-fly opacity-80 lg:block" viewBox="0 0 80 80" fill="none" aria-hidden="true">
     <ellipse class="wing" cx="28" cy="28" rx="16" ry="8" fill="#F0B90B" fill-opacity="0.35" />
     <ellipse class="wing" cx="52" cy="28" rx="16" ry="8" fill="#F0B90B" fill-opacity="0.35" style="animation-delay: 0.1s" />
     <ellipse cx="40" cy="42" rx="8" ry="16" fill="#F0B90B" />
-    <circle cx="40" cy="28" r="7" fill="#FFD54A" />
+    <circle cx="40" cy="28" r="7" fill="#F0B90B" />
   </svg>
   <svg class="pointer-events-none fixed right-[10%] top-[58%] hidden w-12 h-12 float-fly opacity-70 lg:block" style="animation-delay: -2s" viewBox="0 0 80 80" fill="none" aria-hidden="true">
-    <ellipse class="wing" cx="28" cy="28" rx="16" ry="8" fill="#FFD54A" fill-opacity="0.4" />
-    <ellipse class="wing" cx="52" cy="28" rx="16" ry="8" fill="#FFD54A" fill-opacity="0.4" />
+    <ellipse class="wing" cx="28" cy="28" rx="16" ry="8" fill="#F0B90B" fill-opacity="0.4" />
+    <ellipse class="wing" cx="52" cy="28" rx="16" ry="8" fill="#F0B90B" fill-opacity="0.4" />
     <ellipse cx="40" cy="42" rx="8" ry="16" fill="#F0B90B" />
-    <circle cx="40" cy="28" r="7" fill="#FFF6D6" />
+    <circle cx="40" cy="28" r="7" fill="#EAECEF" />
   </svg>
   <svg class="pointer-events-none fixed left-[18%] bottom-[12%] hidden w-10 h-10 float-fly opacity-60 lg:block" style="animation-delay: -4s" viewBox="0 0 80 80" fill="none" aria-hidden="true">
     <ellipse class="wing" cx="28" cy="28" rx="16" ry="8" fill="#F0B90B" fill-opacity="0.4" />
     <ellipse class="wing" cx="52" cy="28" rx="16" ry="8" fill="#F0B90B" fill-opacity="0.4" />
     <ellipse cx="40" cy="42" rx="8" ry="16" fill="#F0B90B" />
-    <circle cx="40" cy="28" r="7" fill="#FFD54A" />
+    <circle cx="40" cy="28" r="7" fill="#F0B90B" />
   </svg>
 
-  <header class="nav-blur sticky top-0 z-50">
+  <header class="sticky top-0 z-50 border-b border-bnb/20 bg-night/90 backdrop-blur-xl">
     <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
       <a href="#top" class="flex items-center gap-3 min-w-0">
         <img src="logo.png" alt="Binance Fruit Flies logo" class="h-11 w-11 rounded-full ring-2 ring-bnb shadow-glow object-cover" />
-        <div class="min-w-0">
-          <p class="font-display text-[11px] sm:text-xs tracking-[0.18em] uppercase text-honey truncate">Binance Fruit Flies</p>
-          <p class="font-display text-sm sm:text-base font-black text-bnb">$币安果蝇</p>
+        <div class="min-w-0 hidden sm:block">
+          <p class="font-display text-[11px] sm:text-xs tracking-[0.18em] uppercase text-bnb truncate">Binance Fruit Flies</p>
+          <p class="font-display text-sm sm:text-base font-bold text-ink">$幣安果蠅</p>
         </div>
       </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-pulp/80">
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-mute">
         <a href="#about" class="hover:text-bnb transition">Swarm</a>
         <a href="#howtobuy" class="hover:text-bnb transition">How to Buy</a>
         <a href="#chart" class="hover:text-bnb transition">Chart</a>
       </nav>
       <div class="flex items-center gap-2">
-        <a href="https://x.com/bnbfruitflies" target="_blank" rel="noopener noreferrer" class="grid h-10 w-10 place-items-center rounded-full bg-black ring-1 ring-bnb/50 hover:ring-honey transition" aria-label="Twitter / X">
+        <a href="https://x.com/bnbfruitflies" target="_blank" rel="noopener noreferrer" class="grid h-10 w-10 place-items-center rounded-full bg-black ring-1 ring-bnb/50 hover:ring-bnb transition" aria-label="Twitter / X">
           <img src="x.png" alt="X" class="h-5 w-5 object-contain" />
         </a>
-        <a href="https://flap.sh/bnb/TBA" target="_blank" rel="noopener noreferrer" class="shine inline-flex whitespace-nowrap rounded-full bg-bnb px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold text-orchard hover:bg-honey transition">
+        <a href="https://flap.sh/bnb/TBA" target="_blank" rel="noopener noreferrer" class="shine inline-flex whitespace-nowrap rounded-sm bg-bnb px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold text-night hover:brightness-110 transition">
           Buy Now
         </a>
       </div>
     </div>
   </header>
 
-  <div class="relative z-10 overflow-hidden border-y border-bnb/20 bg-orchard/70">
-    <div class="flex ticker whitespace-nowrap py-2 font-display text-[11px] sm:text-xs tracking-[0.28em] uppercase text-honey">
-      <span class="px-6">Tiny wings, massive dreams! • Swarm the market • Chase green candles • Buzz toward the moon • $币安果蝇 • Binance Fruit Flies • Tiny wings, massive dreams! • Swarm the market • Chase green candles • Buzz toward the moon • $币安果蝇 • Binance Fruit Flies •</span>
-      <span class="px-6">Tiny wings, massive dreams! • Swarm the market • Chase green candles • Buzz toward the moon • $币安果蝇 • Binance Fruit Flies • Tiny wings, massive dreams! • Swarm the market • Chase green candles • Buzz toward the moon • $币安果蝇 • Binance Fruit Flies •</span>
+  <div class="relative z-10 overflow-hidden border-y border-bnb/15 bg-panel">
+    <div class="flex ticker whitespace-nowrap py-2 font-display text-[11px] sm:text-xs tracking-[0.28em] uppercase text-bnb">
+      <span class="px-6">Tiny wings, massive dreams! • Swarm the market • Chase green candles • Buzz toward the moon • $幣安果蠅 • Binance Fruit Flies • Tiny wings, massive dreams! • Swarm the market • Chase green candles • Buzz toward the moon • $幣安果蠅 • Binance Fruit Flies •</span>
+      <span class="px-6">Tiny wings, massive dreams! • Swarm the market • Chase green candles • Buzz toward the moon • $幣安果蠅 • Binance Fruit Flies • Tiny wings, massive dreams! • Swarm the market • Chase green candles • Buzz toward the moon • $幣安果蠅 • Binance Fruit Flies •</span>
     </div>
   </div>
 
@@ -207,123 +188,115 @@
     <section class="mx-auto max-w-6xl px-4 pt-10 pb-10 sm:pt-16">
       <div class="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
         <div>
-          <p class="mb-4 inline-flex items-center gap-2 rounded-full border border-bnb/40 bg-orchard/60 px-3 py-1 text-[11px] font-display tracking-[0.2em] uppercase text-honey">
-            The orchard is live • BNB chain
+          <p class="mb-4 inline-flex items-center gap-2 rounded-sm border border-bnb/40 bg-panel px-3 py-1 text-[11px] font-display tracking-[0.2em] uppercase text-bnb">
+            Live on BNB Chain
           </p>
-          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] text-pulp">
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] text-ink">
             Tiny wings,<br />
             <span class="text-bnb">massive dreams!</span>
           </h1>
-          <p class="mt-3 font-display text-2xl sm:text-3xl font-black text-honey">$币安果蝇</p>
-          <p class="mt-5 max-w-xl text-base sm:text-lg text-pulp/85 leading-relaxed">
-            Swarm the market, chase green candles, and buzz toward the moon. Binance Fruit Flies is the golden swarm on BNB — small enough to slip through FUD, loud enough to fill the orchard.
+          <p class="mt-3 font-display text-2xl sm:text-3xl font-bold text-bnb">$幣安果蠅</p>
+          <p class="mt-5 max-w-xl text-base sm:text-lg text-mute leading-relaxed">
+            Swarm the market, chase green candles, and buzz toward the moon. Binance Fruit Flies is the yellow swarm on BNB Smart Chain — built to move fast, stack BNB, and fill the chart in gold.
           </p>
           <div class="mt-8 flex flex-wrap items-center gap-3">
-            <a href="https://flap.sh/bnb/TBA" target="_blank" rel="noopener noreferrer" class="shine inline-flex items-center gap-2 rounded-full bg-bnb px-6 py-3 text-base font-bold text-orchard shadow-glow hover:bg-honey transition">
+            <a href="https://flap.sh/bnb/TBA" target="_blank" rel="noopener noreferrer" class="shine inline-flex items-center gap-2 rounded-sm bg-bnb px-6 py-3 text-base font-bold text-night shadow-glow hover:brightness-110 transition">
               Buy Now
             </a>
-            <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-bnb px-6 py-3 text-base font-bold text-honey hover:bg-bnb/10 transition">
+            <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-sm border border-bnb px-6 py-3 text-base font-bold text-bnb hover:bg-bnb/10 transition">
               Chart
             </a>
-            <a href="https://x.com/bnbfruitflies" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/60 px-5 py-3 text-sm font-semibold text-pulp hover:border-bnb/60 transition">
+            <a href="https://x.com/bnbfruitflies" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-sm border border-white/10 bg-black px-5 py-3 text-sm font-semibold text-ink hover:border-bnb/60 transition">
               <img src="x.png" alt="" class="h-4 w-4" /> Follow the swarm
             </a>
           </div>
 
-          <div class="mt-8 gold-border rounded-2xl p-4 sm:p-5 shadow-hive">
+          <div class="mt-8 card rounded-md p-4 sm:p-5">
             <div class="flex flex-wrap items-center justify-between gap-3">
               <div class="min-w-0">
-                <p class="text-[11px] font-display tracking-[0.22em] uppercase text-honey/80">Contract Address</p>
-                <p id="ca-display" class="ca-mono mt-1 truncate text-sm sm:text-base text-pulp">TBA</p>
+                <p class="text-[11px] font-display tracking-[0.22em] uppercase text-mute">Contract Address</p>
+                <p id="ca-display" class="ca-mono mt-1 truncate text-sm sm:text-base text-ink">TBA</p>
               </div>
-              <button id="copy-ca" type="button" class="shrink-0 rounded-full bg-bnb px-4 py-2 text-sm font-bold text-orchard hover:bg-honey transition">
+              <button id="copy-ca" type="button" class="shrink-0 rounded-sm bg-bnb px-4 py-2 text-sm font-bold text-night hover:brightness-110 transition">
                 Copy CA
               </button>
             </div>
           </div>
         </div>
 
-        <div class="relative mx-auto w-full max-w-md pb-20">
-          <div class="absolute -inset-6 rounded-full bg-bnb/20 blur-3xl"></div>
-          <div class="relative overflow-hidden rounded-[2rem] border border-bnb/50 shadow-glow">
-            <img src="banner.jpg" alt="Golden fruit orchard banner with Binance Fruit Flies" class="h-56 w-full object-cover sm:h-64" />
-            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-orchard via-orchard/40 to-transparent p-4">
-              <p class="font-display text-xs tracking-[0.2em] uppercase text-honey">Golden orchard • BNB swarm</p>
-            </div>
-          </div>
-          <div class="absolute -bottom-10 left-1/2 -translate-x-1/2">
-            <img src="logo.png" alt="" class="buzz pulse-glow h-36 w-36 sm:h-44 sm:w-44 rounded-full object-cover ring-4 ring-bnb" />
-          </div>
+        <div class="relative mx-auto grid place-items-center w-full max-w-md py-8">
+          <div class="absolute inset-8 rounded-full bg-bnb/20 blur-3xl"></div>
+          <img src="logo.png" alt="Binance Fruit Flies" class="buzz pulse-glow relative h-64 w-64 sm:h-80 sm:w-80 rounded-full object-cover ring-4 ring-bnb" />
         </div>
       </div>
     </section>
 
-    <section id="about" class="mx-auto max-w-6xl scroll-mt-28 px-4 pt-6 pb-8 lg:pt-8">
+    <section id="about" class="mx-auto max-w-6xl scroll-mt-28 px-4 pt-6 pb-8">
       <div class="grid gap-4 sm:grid-cols-3">
-        <article class="gold-border rounded-2xl p-6 shadow-hive">
-          <p class="font-display text-xs tracking-[0.2em] uppercase text-honey">Tiny wings</p>
-          <p class="mt-2 text-pulp/85">Micro-cap energy with fruit-fly speed. We dart in, stack BNB, and never sit still on a red candle.</p>
+        <article class="card rounded-md p-6">
+          <p class="font-display text-xs tracking-[0.2em] uppercase text-bnb">Tiny wings</p>
+          <p class="mt-2 text-mute">Micro-cap energy with fly speed. We dart in, stack BNB, and never sit still on a red candle.</p>
         </article>
-        <article class="gold-border rounded-2xl p-6 shadow-hive">
-          <p class="font-display text-xs tracking-[0.2em] uppercase text-honey">Massive dreams</p>
-          <p class="mt-2 text-pulp/85">One fly is a pest. A swarm is a movement. $币安果蝇 is here to cover the chart in gold.</p>
+        <article class="card rounded-md p-6">
+          <p class="font-display text-xs tracking-[0.2em] uppercase text-bnb">Massive dreams</p>
+          <p class="mt-2 text-mute">One fly is noise. A swarm is a market. $幣安果蠅 is here to cover the chart in Binance gold.</p>
         </article>
-        <article class="gold-border rounded-2xl p-6 shadow-hive">
-          <p class="font-display text-xs tracking-[0.2em] uppercase text-honey">Buzz to the moon</p>
-          <p class="mt-2 text-pulp/85">Chase green candles. Ignore the swatters. Keep the hive loud until the orchard is ours.</p>
+        <article class="card rounded-md p-6">
+          <p class="font-display text-xs tracking-[0.2em] uppercase text-bnb">Buzz to the moon</p>
+          <p class="mt-2 text-mute">Chase green candles. Keep the hive loud. Ride BNB until the swarm owns the board.</p>
         </article>
       </div>
     </section>
 
     <section id="howtobuy" class="mx-auto max-w-6xl scroll-mt-28 px-4 py-16">
       <div class="mb-10 text-center">
-        <p class="font-display text-xs tracking-[0.28em] uppercase text-honey">Flight plan</p>
-        <h2 class="mt-2 font-display text-3xl sm:text-4xl font-black text-pulp">How to Buy $币安果蝇</h2>
-        <p class="mt-3 text-pulp/80">Four flaps. All you need is BNB and a little buzz.</p>
+        <p class="font-display text-xs tracking-[0.28em] uppercase text-bnb">Flight plan</p>
+        <h2 class="mt-2 font-display text-3xl sm:text-4xl font-bold text-ink">How to Buy $幣安果蠅</h2>
+        <p class="mt-3 text-mute">Four steps. All you need is BNB and a little buzz.</p>
       </div>
 
       <div class="relative grid gap-5 md:grid-cols-4">
         <div class="pointer-events-none absolute left-[12%] right-[12%] top-10 hidden h-0.5 flight-line md:block"></div>
 
-        <article class="gold-border relative rounded-2xl p-5 pt-8 text-center shadow-hive">
-          <div class="hex-step mx-auto mb-4 grid h-16 w-14 place-items-center bg-bnb font-display text-xl font-black text-orchard">1</div>
-          <h3 class="font-display text-lg font-bold text-honey">Hatch a wallet</h3>
-          <p class="mt-2 text-sm text-pulp/80">Install MetaMask, Trust Wallet, or Binance Wallet and switch the network to BNB Smart Chain.</p>
+        <article class="card relative rounded-md p-5 pt-8 text-center">
+          <div class="hex-step mx-auto mb-4 grid h-16 w-14 place-items-center bg-bnb font-display text-xl font-bold text-night">1</div>
+          <h3 class="font-display text-lg font-bold text-bnb">Get a wallet</h3>
+          <p class="mt-2 text-sm text-mute">Install MetaMask, Trust Wallet, or Binance Wallet and switch the network to BNB Smart Chain.</p>
         </article>
-        <article class="gold-border relative rounded-2xl p-5 pt-8 text-center shadow-hive">
-          <div class="hex-step mx-auto mb-4 grid h-16 w-14 place-items-center bg-bnb font-display text-xl font-black text-orchard">2</div>
-          <h3 class="font-display text-lg font-bold text-honey">Fuel up with BNB</h3>
-          <p class="mt-2 text-sm text-pulp/80">Buy BNB on an exchange, then send it to your wallet. BNB is the nectar that powers the swap.</p>
+        <article class="card relative rounded-md p-5 pt-8 text-center">
+          <div class="hex-step mx-auto mb-4 grid h-16 w-14 place-items-center bg-bnb font-display text-xl font-bold text-night">2</div>
+          <h3 class="font-display text-lg font-bold text-bnb">Fund with BNB</h3>
+          <p class="mt-2 text-sm text-mute">Buy BNB on Binance or another exchange, then send it to your wallet to power the swap.</p>
         </article>
-        <article class="gold-border relative rounded-2xl p-5 pt-8 text-center shadow-hive">
-          <div class="hex-step mx-auto mb-4 grid h-16 w-14 place-items-center bg-bnb font-display text-xl font-black text-orchard">3</div>
-          <h3 class="font-display text-lg font-bold text-honey">Land on Flap.sh</h3>
-          <p class="mt-2 text-sm text-pulp/80">Open the Buy Now link, connect your wallet, and enter the orchard DEX.</p>
+        <article class="card relative rounded-md p-5 pt-8 text-center">
+          <div class="hex-step mx-auto mb-4 grid h-16 w-14 place-items-center bg-bnb font-display text-xl font-bold text-night">3</div>
+          <h3 class="font-display text-lg font-bold text-bnb">Open Flap.sh</h3>
+          <p class="mt-2 text-sm text-mute">Hit Buy Now, connect your wallet, and enter the DEX on BNB Chain.</p>
         </article>
-        <article class="gold-border relative rounded-2xl p-5 pt-8 text-center shadow-hive">
-          <div class="hex-step mx-auto mb-4 grid h-16 w-14 place-items-center bg-bnb font-display text-xl font-black text-orchard">4</div>
-          <h3 class="font-display text-lg font-bold text-honey">Swarm the buy</h3>
-          <p class="mt-2 text-sm text-pulp/80">Swap BNB for $币安果蝇, confirm the flight, and buzz toward the moon with the hive.</p>
+        <article class="card relative rounded-md p-5 pt-8 text-center">
+          <div class="hex-step mx-auto mb-4 grid h-16 w-14 place-items-center bg-bnb font-display text-xl font-bold text-night">4</div>
+          <h3 class="font-display text-lg font-bold text-bnb">Swap and swarm</h3>
+          <p class="mt-2 text-sm text-mute">Swap BNB for $幣安果蠅, confirm the trade, and buzz toward the moon with the hive.</p>
         </article>
       </div>
 
       <div class="mt-10 flex flex-wrap items-center justify-center gap-3">
-        <a href="https://flap.sh/bnb/TBA" target="_blank" rel="noopener noreferrer" class="shine inline-flex rounded-full bg-bnb px-8 py-3 font-bold text-orchard shadow-glow hover:bg-honey transition">Buy $币安果蝇 with BNB</a>
-        <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-full border border-bnb px-8 py-3 font-bold text-honey hover:bg-bnb/10 transition">Open Chart</a>
+        <a href="https://flap.sh/bnb/TBA" target="_blank" rel="noopener noreferrer" class="shine inline-flex rounded-sm bg-bnb px-8 py-3 font-bold text-night shadow-glow hover:brightness-110 transition">Buy $幣安果蠅 with BNB</a>
+        <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-sm border border-bnb px-8 py-3 font-bold text-bnb hover:bg-bnb/10 transition">Open Chart</a>
       </div>
     </section>
 
     <section id="chart" class="mx-auto max-w-6xl scroll-mt-28 px-4 pb-16">
       <div class="mb-6 flex flex-wrap items-end justify-between gap-3">
         <div>
-          <p class="font-display text-xs tracking-[0.28em] uppercase text-honey">Live hive</p>
-          <h2 class="mt-1 font-display text-3xl font-black text-pulp">Dexscreener Chart</h2>
+          <p class="font-display text-xs tracking-[0.28em] uppercase text-bnb">Live market</p>
+          <h2 class="mt-1 font-display text-3xl font-bold text-ink">Dexscreener Chart</h2>
         </div>
-        <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-bnb hover:text-honey">Open on Dexscreener →</a>
+        <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-bnb hover:text-ink">Open on Dexscreener →</a>
       </div>
-      <div class="overflow-hidden rounded-2xl border border-bnb/40 shadow-hive bg-orchard/80">
+      <div class="overflow-hidden rounded-md border border-bnb/20 bg-panel">
         <iframe
-          title="Dexscreener chart for 币安果蝇"
+          title="Dexscreener chart for 幣安果蠅"
           src="https://dexscreener.com/bsc/TBA?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"
           class="h-[420px] w-full sm:h-[560px]"
           style="border:0"
@@ -333,26 +306,26 @@
     </section>
   </main>
 
-  <footer class="relative z-10 border-t border-bnb/25 bg-orchard/80">
+  <footer class="relative z-10 border-t border-bnb/20 bg-panel">
     <div class="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-8 text-center sm:flex-row sm:justify-between sm:text-left">
       <div class="flex items-center gap-3">
         <img src="logo.png" alt="" class="h-10 w-10 rounded-full object-cover ring-1 ring-bnb" />
         <div>
-          <p class="font-display text-sm font-bold text-pulp">Binance Fruit Flies</p>
-          <p class="text-xs text-honey">$币安果蝇 • Tiny wings, massive dreams!</p>
+          <p class="font-display text-sm font-bold text-ink">Binance Fruit Flies</p>
+          <p class="text-xs text-bnb">$幣安果蠅 • Tiny wings, massive dreams!</p>
         </div>
       </div>
       <div class="flex items-center gap-3">
         <a href="https://x.com/bnbfruitflies" target="_blank" rel="noopener noreferrer" class="grid h-10 w-10 place-items-center rounded-full bg-black ring-1 ring-bnb/40" aria-label="X">
           <img src="x.png" alt="X" class="h-4 w-4" />
         </a>
-        <a href="https://flap.sh/bnb/TBA" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-bnb hover:text-honey">Buy Now</a>
-        <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-bnb hover:text-honey">Chart</a>
+        <a href="https://flap.sh/bnb/TBA" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-bnb hover:text-ink">Buy Now</a>
+        <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-bnb hover:text-ink">Chart</a>
       </div>
     </div>
   </footer>
 
-  <div id="toast" class="pointer-events-none fixed bottom-6 left-1/2 z-[60] -translate-x-1/2 translate-y-16 rounded-full bg-bnb px-5 py-2 text-sm font-bold text-orchard opacity-0 shadow-glow transition duration-300">
+  <div id="toast" class="pointer-events-none fixed bottom-6 left-1/2 z-[60] -translate-x-1/2 translate-y-16 rounded-sm bg-bnb px-5 py-2 text-sm font-bold text-night opacity-0 shadow-glow transition duration-300">
     CA copied to clipboard
   </div>
 
